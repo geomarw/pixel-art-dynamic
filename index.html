@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Dynamic Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Pixel Art Dynamic Editor</h1>
+
+  <div class="form-container">
+    <div class="form-item">
+      <label for="quantity-of-pixels">
+        Quantity of pixels:
+        <input type="number" id="quantity-of-pixels" value="10" min="5" max="50" step="5">
+      </label>
+    </div>
+    <div class="form-item">
+      <label for="size-of-pixel">
+        Size of pixel:
+        <input type="number" id="size-of-pixel" value="20" min="10" max="50" step="10">
+      </label>
+    </div>
+  </div>
+  <div class="form-container">
+    <div class="form-button">
+      <label for="color">
+        Color:
+        <input type="text" id="color-input">
+      </label>
+    </div>
+    <div class="form-item">
+      <button id="color-button">+</button>
+    </div>
+  </div>
+  <div id="color-picker-container"></div>
+  <div id="pixels-container"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
